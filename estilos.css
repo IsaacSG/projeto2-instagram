@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 935px;
+}
+.barra-topo {
+    width: 935px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+}
+.logos {
+    display: flex;
+}
+.image > img {
+    margin-top: 5px;
+    display: none;
+}
+.barra-vertical > img {
+    margin-top: 5px;
+}
+.barra-pesquisa {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 216px;
+    height: 26px;
+    border: 1px solid #DBDBDB;
+}
+.caixa-stories {
+    width: 614px;
+    height: 118px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 88px;
+    border: 1px solid #DBDBDB;
+    overflow: hidden;
+    position: relative;
+}
+.namestories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.storie {
+    width: 66px;
+    height: 66px;
+    background: url("/projeto2-instagram/Images/stories_background.jpg");
+    background-size: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.storie > img {
+    width: 56px;
+    height: 56px;
+    padding: 4px;
+    border-radius: 50%;
+}
+.barra-lateral {
+    width: 293px;
+    position: fixed;
+    right: 0px;
+    top: 130px;
+}
+.barra-lateral > img {
+    width: 56px;
+    border-radius: 50%;
+}
+.barra-lateral > p {
+    font-size: 11px;
+    color: #8E8E8E;
+    padding-top: 20px;
+}
+.myUser {
+    display: flex;
+    align-items: center;
+}
+.myUser > img {
+    width: 56px;
+    border-radius: 50%;
+}
+.sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 293px;
+}
+.sugestoes {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.sugestoes > img {
+    width: 32px;
+    border-radius: 50%;
+}
+.sugestoes > h5 {
+    margin-left: 170px;
+    font-size: 12px;
+    color: #139EF2;
+
+}
+.texto-user > h6 {
+    font-size: 14px;
+    color: #262626;
+}
+.texto-user > p {
+    font-size: 12px;
+    color: #8E8E8E;
+}
+.coluna-de-pots{
+    width: 614px;
+    margin-top: 24px;
+}
+.coluna-de-pots > img {
+    width: 614px;
+}
+.post {
+    width: 614px;
+    border: 1px solid #DBDBDB;
+}
+.user {
+    width: 66px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user > img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.foto > img {
+    width: 614px;
+}
+.react {
+    display: flex;
+    justify-content: space-between;
+}
+.curtido-por {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.curtido-por > img {
+    width: 20px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.curtido-por > p {
+    font-size: 14px;
+    color: #8E8E8E;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.curtido-por > h6 {
+    font-size: 14px;
+    color: #262626;
+}
+.top-user-bar {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #DBDBDB;
+    margin-bottom: 60px;
+}
+.barra-baixo {
+    display: none;
+}
+.icon-size {
+    margin: 5px 10px 5px 10px;
+    font-size: 22px;
+}
+.icon-seta {
+    font-size: 22px;
+    color: #FFFFFF;
+    position: absolute;
+    right: 0px;
+}
+.icon-distance {
+    margin-left: 470px;
+}
+.barra-vertical {
+    margin: 0px 10px 0px 2px;
+    width: 1px;
+    height: 23px;
+    padding-left: 10px;
+    border-left:1px solid #DBDBDB ;
+}
+@media (max-width: 935px){
+    .barra-lateral{
+        display: none;
+    }
+}
+@media (max-width: 614px){
+    .container {
+        width: 100%;
+    }
+    .coluna-de-pots {
+        width: 100%;
+    }
+    .barra-topo {
+        justify-content: space-between;
+    }
+    .image > img {
+        display: initial;
+    }
+    .barra-vertical{
+        display: none;
+    }
+    .barra-pesquisa {
+        display: none;
+    }
+    .icones1 ion-icon:nth-child(2) {
+        display: none;
+    }
+    .icones1 ion-icon:nth-child(3) {
+        display: none;
+    }
+    .icones1 ion-icon:nth-child(4) {
+        display: none;
+    }
+    .caixa-stories {
+        background-color: transparent;
+        border: none;
+    }
+    .icon-seta {
+        display: none;
+    }
+    .barra-baixo {
+        display: initial;
+        width: 100%;
+        display: flex;
+        position: fixed;
+        align-items: center;
+        justify-content: space-around;
+        left: 0;
+        bottom: 0;
+        background-color: #FAFAFA;
+        border: 1px solid #DBDBDB;
+    }
+}
